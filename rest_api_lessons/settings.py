@@ -28,7 +28,7 @@ if os.environ.get('DEBUG') == 'on':
 else:
     DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['radomirnarmukhamedov123.pythonanywhere.com']
 
 # Application definition
 
