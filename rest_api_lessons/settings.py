@@ -25,12 +25,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', 'default_secret_key')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-if os.environ.get('DEBUG') == 'on':
-    DEBUG = True
-else:
-    DEBUG = False
+# if os.environ.get('DEBUG') == 'on':
+DEBUG = True
+# else:
+#     DEBUG = False
 
-ALLOWED_HOSTS = ['radomirnarmukhamedov123.pythonanywhere.com']
+ALLOWED_HOSTS = []
 
 # Application definition
 
