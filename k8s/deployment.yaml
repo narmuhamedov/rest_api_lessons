@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-project
+  template:
+    metadata:
+      labels:
+        app: my-project
+    spec:
+      containers:
+      - name: my-container
+        image: gcr.io/my-gcp-project/my-repo-name:latest
+        ports:
+        - containerPort: 8000
